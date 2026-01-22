@@ -1,3 +1,6 @@
-title: Avisos y recordatorios
-description: Comunicados oficiales
+title: Blog TechLottus
+description: Avisos y recordatorios
 theme: minima
+
+url: "https://techlottus.github.io"
+baseurl: "/Bach-ULAVALLE"
