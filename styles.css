@@ -1,6 +1,4 @@
-body {
-  background: red !important;
-}
+
 
 :root{
   --brand: #178C7F;
@@ -22,7 +20,7 @@ body{
 .header{
   position: relative;
   color: white;
-  padding: 60px 16px;
+  padding: 100px 16px;
   text-align: center;
 
   /* Fondo con imagen */
