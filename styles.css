@@ -1,3 +1,7 @@
+body {
+  background: red !important;
+}
+
 :root{
   --brand: #178C7F;
   --brand-dark: #0f6b61;
