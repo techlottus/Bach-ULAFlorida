@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>BACH: ULA VALLE</h1>
+    <p>{{ page.subtitle | default: site.description }}</p>
+  </header>
+
+  <div class="topbar">
+    <nav class="nav">
+      <a href="{{ site.baseurl }}/">Inicio</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">Contenido ▾</button>
+        <div class="dropdown-content">
+          <a href="{{ site.baseurl }}/avisos/">Avisos</a>
+          <a href="{{ site.baseurl }}/recordatorios/">Recordatorios</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <main class="container">
+    <section class="card">
+      {{ content }}
+    </section>
+  </main>
+
+  <footer class="footer">© 2026 BACH: ULA VALLE</footer>
+
+  <script>
+    // Dropdown por click (estable)
+    const dd = document.querySelector(".dropdown");
+    const btn = dd?.querySelector(".dropbtn");
+    btn?.addEventListener("click", (e) => { e.stopPropagation(); dd.classList.toggle("open"); });
+    document.addEventListener("click", () => dd?.classList.remove("open"));
+  </script>
+
+</body>
+</html>

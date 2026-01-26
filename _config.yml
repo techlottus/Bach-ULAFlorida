@@ -1,6 +1,10 @@
-title: Blog TechLottus
+title: BACH: ULA VALLE
 description: Avisos y recordatorios
 theme: minima
 
+# Project Page:
 url: "https://techlottus.github.io"
 baseurl: "/Bach-ULAVALLE"
+
+plugins:
+  - jekyll-feed

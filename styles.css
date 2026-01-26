@@ -25,7 +25,7 @@ body{
   text-align: center;
 
   /* Fondo con imagen */
-  background-image: url("imgheadula.jpg");
+  background-image: url("./imgheadula.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -168,3 +168,10 @@ body{
   border: 1px solid #ccc;
   border-radius: 12px;
 }
+<<<<<<< HEAD
+
+
+
+=======
+
+>>>>>>> 1062fa33de4fc138443686eab334544640372aed

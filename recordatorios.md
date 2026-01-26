@@ -1,75 +1,15 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BACH: ULA VALLE - Recordatorios</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+---
+layout: default
+title: Recordatorios
+subtitle: Recordatorios
+permalink: /recordatorios/
+---
 
-  <header class="header">
-    <h1>BACH: ULA VALLE</h1>
-    <p>Recordatorios</p>
-  </header>
-
-  <div class="topbar">
-    <nav class="nav">
-      <a href="index.html">Inicio</a>
-
-      <div class="dropdown">
-        <button class="dropbtn">Contenido ▾</button>
-        <div class="dropdown-content">
-          <a href="avisos.html">Avisos</a>
-          <a href="recordatorios.html">Recordatorios</a>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <main class="container">
-    <section class="card">
-      <h2>Recordatorios</h2>
-      <p class="meta">Última actualización: <span id="lastUpdate"></span></p>
-
-      <article class="card" style="margin-top:14px;">
-        <h3>TUTORIAL PARA REALIZAR PAGOS</h3>
-        <p>Guía práctica para que estudiantes y familias puedan generar su referencia de pago en
-             Espacio ULA de manera sencilla, consultar su estado de cuenta y realizar pagos en línea
-              o mediante ficha de depósito, de forma segura y oportuna.</p>
-
-
-<p>Dar click al archivo para abrir.</p>
-
-<h3>Turorial</h3>
-
-<iframe
-  src="assets/ReferenciaPago.pdf"
-  width="100%"
-  height="400"
-  style="border:1px solid #ccc; border-radius:12px;"
-></iframe>
-
-
-
-<p>15.01.2026, 10:56 am.</p>
-      </article>
-
-      <article class="card" style="margin-top:14px;">
-        <h3>Recordatorio 2</h3>
-        <p>Escribe aquí tu recordatorio.</p>
-      </article>
-    </section>
-  </main>
-
-  <footer class="footer">
-    © 2026 BACH: ULA VALLE
-  </footer>
-
-  <script>
-    document.getElementById("lastUpdate").textContent =
-      new Date().toLocaleDateString("es-MX", { year: "numeric", month: "long", day: "numeric" });
-  </script>
-
-</body>
-</html>
+<ul>
+{% for post in site.categories.recordatorios %}
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <small>({{ post.date | date: "%d/%m/%Y" }})</small>
+  </li>
+{% endfor %}
+</ul>
