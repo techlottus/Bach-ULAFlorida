@@ -6,7 +6,7 @@ permalink: /recordatorios/
 ---
 
 <div class="posts-grid">
-{% for post in site.categories.avisos %}
+{% for post in site.categories.recordatorios %}
   <article class="post-card">
     <h3 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
