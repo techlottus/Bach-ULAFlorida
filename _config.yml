@@ -3,7 +3,7 @@ description: "Avisos y recordatorios"
 theme: minima
 
 url: "https://techlottus.github.io"
-baseurl: "/Bach-ULAVALLE"
+baseurl: "/Bach-ULAFlorida"
 
 plugins:
   - jekyll-feed
